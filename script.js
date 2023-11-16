@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { id: 18, name: 'MS-PowerPoint', category: 'business', description: 'I assist in creating professional PowerPoint presentations.', link: 'https://chat.openai.com/g/g-vIV2R7wST-ms-powerpoint' },
     { id: 19, name: 'Quill', category: 'writing', description: 'Write blogs like a human', link: 'https://chat.openai.com/g/g-FqN5gHFkP-quill' },
     { id: 20, name: 'Visual Weather Artist GPT', category: 'images', description: 'Hi, Im the visual weather artist, give me your location (or any other) and I will draw the current weather conditions for you, a unique never before seen weather report!', link: 'https://chat.openai.com/g/g-twUGxmpHv-visual-weather-artist-gpt' },
-    
+    { id: 21, name: 'Cyber Sentinel', category: 'utility', description: 'Linux-focused cybersecurity guide for beginners ', link: 'https://chat.openai.com/g/g-Gv4OxwWcv-cyber-sentinel' },
   ];
 
   const container = document.getElementById('container');
@@ -100,5 +100,5 @@ document.addEventListener('DOMContentLoaded', function() {
     renderList(currentFilter, e.target.value);
   });
 
-  renderList('all'); // To render all items when the page loads
+  renderList('all');
 });
