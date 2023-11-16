@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 1, name: 'GPT Tool A', category: 'communication', description: 'Description for Tool A', link: '#' },
         { id: 2, name: 'GPT Tool B', category: 'dalle-3', description: 'Description for Tool B', link: '#' },
         { id: 3, name: 'GPT Tool C', category: 'code', description: 'Description for Tool C', link: '#' },
-        // ... other tools, add more to test pagination ...
+        // copy paste to add new entries, eventually will link to db
     ];
 
     const container = document.getElementById('container');
@@ -83,5 +83,5 @@ document.addEventListener('DOMContentLoaded', function() {
         renderList(currentFilter, e.target.value);
     });
 
-    renderList('all'); // Render all items initially
+    renderList('all'); // To render all items when the page loads
 });
