@@ -166,3 +166,16 @@ header h1 {
     border-radius: 5px;
     border: 1px solid #ddd;
 }
+
+#pagination a {
+    padding: 8px 16px;
+    margin-right: 4px;
+    border: 1px solid #ddd;
+    color: #0275d8;
+    text-decoration: none;
+}
+
+#pagination a.active {
+    background-color: #0275d8;
+    color: white;
+}
