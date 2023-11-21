@@ -8,40 +8,49 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-RVTECP60RE');
   </script>
   <!--End google tag-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GPT Central</title>
+  <meta name="description" content="Comprehensive directory of OpenAI GPT models powered by GPT-4.">
+  <meta name="author" content="GPT Central | GPT-4 Directory">
+  <meta name="keywords"
+    content="OpenAI, GPT models, AI language models, GPT-3, GPT-4, artificial intelligence, GPT directory, GPTGarden, GPT Garden, Chat GPT, Chat-GPT">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-con" href="image-removebg-preview (4).png">
-  <!--Line 19 is for favicon, don't modify | Line 21/22 is for google ads-->
+  <!--Line above is for favicon, don't modify | Lines below (26/27) is for google ads-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5097564434285481"
     crossorigin="anonymous"></script>
+  <!--SEO-->
+  <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "GPT Central | GPT-4 Directory",
+            "description": "Comprehensive directory of OpenAI GPT models powered by GPT-4.",
+            "url": "https://www.gptcentral.xyz/"
+        }
+    </script>
 </head>
-
-<header>
-  <h1>GPT Central</h1>
-  <button id="submitGpt">Submit your GPT</button>
-</header>
-
-<script>
-  var button = document.getElementById('submitGpt');
-
-  button.addEventListener('click', function () {
-
-    window.open('https://form.jotform.com/233187307162050', '_blank');
-  });
-</script>
 
 <body>
   <header>
+    <h1>GPT Central</h1>
+    <button id="submitGpt">Submit your GPT</button>
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="Search GPT titles...">
     </div>
   </header>
+
+  <script>
+    var button = document.getElementById('submitGpt');
+    button.addEventListener('click', function () {
+      window.open('https://form.jotform.com/233187307162050', '_blank');
+    });
+  </script>
+
   <div class="content-wrapper">
     <div class="hamburger-menu">
       <div class="menu-icon">&#9776;</div>
@@ -63,16 +72,21 @@
           <li class="category-item" data-category="images">Images</li>
         </ul>
       </div>
-
     </div>
+  </div> <!-- Close content-wrapper here -->
 
-    <div id="container"></div>
-
-    <script src="script.js"></script>
-
-</body>
-  <footer>
-    <div id="pagination"></div>
-  </footer>
+  <div id="container"></div>
+  <div id="pagination"></div>
   
+  <div class="dark-mode-toggle"> <!--Toggle for dark mode-->
+      <input type="checkbox" id="darkModeSwitch" class="checkbox">
+      <label for="darkModeSwitch" class="switch">
+          <span class="sun">&#9728;</span>
+          <span class="moon">&#9790;</span>
+      </label>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
 </html>
